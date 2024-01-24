@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@300;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Geologica", sans-serif;
+}
+
+header {
+  display: inline;
+}
+.jumbotron {
+  background-color: #364f6b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  font-size: 15px;
+}
+.jumbotron img {
+  width: 200px;
+}
+nav {
+  width: 100%;
+  height: 40px;
+  position: sticky;
+  top: 0; /* required */
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #364f6b;
+  gap: 2rem;
+}
+.product section {
+  width: 70%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  gap: 2rem;
+}
+nav ul li {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.05rem;
+  color: white;
+  font-weight: 300;
+  border-radius: 999px;
+  padding: 5px 7px;
+  transition: all 0.3s ease-in-out;
+}
+nav ul li a:hover {
+  background-color: white;
+  color: #d4013a;
+}
+.dropbtn {
+  background-color: transparent;
+  border-radius: 999px;
+  border-color: transparent;
+  color: white;
+  padding: 5px 7px;
+  font-size: 1.05rem;
+  cursor: pointer;
+  font-family: "Geologica", sans-serif;
+  font-weight: 300;
+}
+
+.dropdown {
+  display: flex;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  border-radius: 20px;
+  display: none;
+  position: absolute;
+  background-color: #364f6b;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  transition: all 1s ease-in-out;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 20px;
+}
+
+.dropdown-content a:hover {
+  background-color: white;
+  color: #d4013a;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: #d4013a;
+  background-color: white;
+}
+
+/* carousel */
+.mySlides {
+  display: none;
+}
+.mySlides img {
+  vertical-align: middle;
+  width: 100%;
+  height: 485px;
+  object-fit: cover;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot-container {
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: slideRight;
+  animation-duration: 1s;
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0.4;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+/* carousel */
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.company {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: #364f6b;
+  margin-block: 2rem;
+  text-align: start;
+  width: 100%;
+}
+.company p {
+  font-size: 16px;
+  display: flex;
+  text-wrap: wrap;
+  padding: 10px;
+}
+
+.profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 60%;
+  border: 10px;
+  border-color: #364f6b;
+  object-fit: cover;
+}
+
+footer {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #364f6b;
+  width: 100%;
+  color: #fff;
+  padding: 10px;
+  height: 50px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+aside {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  color: #364f6b;
+  font-size: 16px;
+  width: 20%;
+  padding: 20px;
+}
+.alamat header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.alamat header img {
+  width: 100px;
+}
+.alamat section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.product {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  gap: 5rem;
+}
+.product section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: -2px 2px 34px 0px rgba(0, 0, 0, 0.42);
+  -webkit-box-shadow: -2px 2px 34px 0px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: -2px 2px 34px 0px rgba(0, 0, 0, 0.42);
+  color: #364f6b;
+}
+.product section h3 {
+  color: #d4013a;
+}
+.product section img {
+  width: 100%;
+}
+@media screen and (max-width: 930px) {
+  main {
+    flex-direction: column;
+  }
+  aside {
+    width: 100%;
+  }
+  .company {
+    text-wrap: wrap;
+  }
+  .product section {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  .jumbotron {
+    text-align: center;
+  }
+  .jumbotron h1 {
+    font-size: 20px;
+  }
+  .jumbotron img {
+    width: 100px;
+  }
+  nav ul {
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+  }
+}
