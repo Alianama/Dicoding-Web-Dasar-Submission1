@@ -3,159 +3,161 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Submission Dicoding</title>
-    <link rel="stylesheet" href="Style/app.css" />
-    <script src="JS/app.js"></script>
+    <link rel="stylesheet" href="/style/style.css" />
+    <script src="/JS/script.js"></script>
+    <title>Portfolio</title>
   </head>
   <body>
     <header>
-      <div class="jumbotron">
-        <img src="img/logo.png" alt="Logo-Toyoink" />
-        <h1>TOYOINK INDONESIA</h1>
-      </div>
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#dot-container">About</a></li>
+          <li><a href="#aboutme">About Me</a></li>
         </ul>
         <div class="dropdown">
-          <button class="dropbtn">Product</button>
+          <button class="dropbtn">Biodata</button>
           <div class="dropdown-content">
-            <a href="#masterbatch" onclick="scrollmb()">Masterbacth</a>
-            <a href="#gravure">Gravure Ink</a>
-            <a href="#offset">Offset Ink</a>
+            <a href="#school">Studi</a>
+            <a href="#experience">Work Experience</a>
+            <a href="#skill">Skill</a>
           </div>
         </div>
       </nav>
-
-      <div class="slideshow-container">
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="img/carousel/img1.jpg" alt="img1" />
-          <div class="text">Gravure Ink Aplications</div>
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="img/carousel/img2.jpg" alt="img2" />
-          <div class="text">Masterbacth</div>
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="img/carousel/img3.jpg" alt="img3" />
-          <div class="text">Ofsett ink</div>
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
+      <div class="jumbotron">
+        <img src="/img/bg.svg" alt="" width="" />
       </div>
-      <br />
+      <div class="carousel">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="text">
+              <h1>Keep Learning and Forward Think!</h1>
+              <q>"Belajar adalah petualangan yang tak pernah berakhir."</q>
+            </div>
+          </div>
 
-      <div class="dot-container" id="dot-container">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+          <div class="mySlides fade">
+            <div class="text">
+              <h1>Web Developer</h1>
+              <q>"Inovasi adalah kunci menuju masa depan yang canggih."</q>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="text">
+              <h1>ICT Enthusiast</h1>
+              <q>"Setiap langkah kecil adalah progres menuju impian besar."</q>
+            </div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br />
+
+        <div class="dot-container" id="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <script>
+          showSlides(slideIndex);
+        </script>
       </div>
-      <script>
-        showSlides(slideIndex);
-      </script>
     </header>
-
     <main id="main">
       <div class="content" id="content">
-        <article class="company" id="biodata">
+        <article class="aboutme" id="aboutme">
           <div class="profile" id="profile">
-            <img src="img/profile.jpg" alt="Profile Foto" />
+            <img class="imgicon" src="img/cat.png" alt="Profile Foto" />
           </div>
-          <h1>Our Company</h1>
+          <h1>About Me</h1>
           <p>
-            Sejak tahun 1994, PT. Toyo Ink Indonesia dan cabang perdagangannya
-            PT. Toyo Ink Trading Indonesia telah melayani berbagai pasar
-            konsumen dan industri di Indonesia dan wilayah sekitarnya dengan
-            produk berkinerja tinggi dan bernilai tambah tinggi. Sebagai anak
-            perusahaan Toyo Ink Group Jepang, kami mendapat dukungan dan
-            keahlian yang telah terbukti dari perusahaan bahan kimia khusus
-            multinasional dengan inovasi dan keunggulan manufaktur selama lebih
-            dari satu abad. <br /><br />
-            Saat ini, PT. Portofolio produk Toyo Ink Indonesia mencakup tinta,
-            pelapis, perekat, masterbatch plastik, dan komponen trim pintu
-            otomotif yang diproduksi di Indonesia serta bahan-bahan canggih
-            lainnya yang diimpor dari jaringan global perusahaan Grup kami. Kami
-            bermitra erat dengan pelanggan kami untuk memastikan solusi kami
-            memenuhi kebutuhan mereka dan standar tertinggi untuk kualitas,
-            kinerja, dan dukungan.
+            Saya Ali Purnama alam seorang IT Enthusiast dan IT Support yang
+            berdedikasi dalam memberikan dukungan teknis dan solusi yang efisien
+            dalam dunia teknologi informasi. Dalam peran saya, saya bertanggung
+            jawab untuk menjaga kelancaran operasional sistem komputer dan
+            jaringan, serta membantu pengguna atau pelanggan dalam mengatasi
+            masalah teknis yang mereka hadapi. Dengan pengetahuan yang mendalam
+            tentang perangkat keras dan lunak komputer, sistem operasi, dan
+            jaringan, saya siap untuk menghadapi tantangan teknis apa pun.
+
+            <br />
+            Saya terampil dalam memperbaiki kerusakan perangkat keras,
+            menginstal dan mengonfigurasi perangkat lunak, serta memberikan
+            bantuan teknis melalui telepon, email, atau tatap muka langsung.
+            Komunikasi yang efektif adalah salah satu kekuatan saya. Saya mampu
+            berinteraksi dengan pengguna dari berbagai latar belakang dan
+            tingkat keahlian, menjelaskan solusi teknis secara jelas dan
+            membantu mereka mengatasi masalah dengan cepat. Saya juga terbiasa
+            bekerja dalam tekanan dan mampu mengelola waktu dengan baik untuk
+            memenuhi kebutuhan pengguna dengan efisiensi.
           </p>
         </article>
-        <article class="product">
-          <section id="masterbatch">
-            <h3>Masterbacth</h3>
-            <img src="img/product/masterbatch.jpg" alt="Masterbacth Image" />
+        <article class="school">
+          <section id="school">
+            <h3>School</h3>
+            <img class="imgicon" src="img/school.png" alt="school" />
+            <ul>
+              <li>Universitas Pelita Bangsa (2022-Now)</li>
+              <li>SMK Singaparna (2018-2021)</li>
+              <li>SMP N 2 Puspahiang (2015-2018)</li>
+            </ul>
+          </section>
+          <section id="experience">
+            <h3>Experience</h3>
+            <img class="imgicon" src="img/experience.png" alt="experience" />
             <p>
-              Masterbatch adalah campuran aditif pekat dalam matriks pembawa
-              yang digunakan untuk menambahkan aditif ini dengan mudah ke produk
-              plastik akhir. Aditif dapat digunakan untuk mewarnai atau untuk
-              memberikan sifat lainnya.
+              Saya terampil dalam memperbaiki kerusakan perangkat keras,
+              menginstal dan mengonfigurasi perangkat lunak, serta memberikan
+              bantuan teknis melalui telepon, email, atau tatap muka langsung.
+              Komunikasi yang efektif adalah salah satu kekuatan saya. Saya
+              mampu berinteraksi dengan pengguna dari berbagai latar belakang
+              dan tingkat keahlian, menjelaskan solusi teknis secara jelas dan
+              membantu mereka mengatasi masalah dengan cepat. Saya juga terbiasa
+              bekerja dalam tekanan dan mampu mengelola waktu dengan baik untuk
+              memenuhi kebutuhan pengguna dengan efisiensi.
             </p>
           </section>
-          <section id="gravure">
-            <h3>Gravure Ink</h3>
-            <img src="img/product/gravure.jpg" alt="Gravure Image" />
-            <p>
-              Gravure ink adalah jenis tinta yang dirancang khusus untuk
-              digunakan dalam proses pencetakan gravur. Pencetakan gravur
-              melibatkan pemahatan atau ukiran gambar pada piring cetak, dan
-              tinta gravur digunakan untuk menerapkan gambar tersebut ke media
-              cetak seperti kertas. Tinta gravur harus memiliki sifat-sifat
-              seperti kekentalan yang sesuai, kemampuan untuk mengisi pahatan
-              dengan baik, dan memberikan hasil cetakan yang tajam dan detail.
-              Pencetakan gravur sering digunakan untuk mencetak gambar
-              berkualitas tinggi pada majalah, katalog, dan kemasan produk.
-            </p>
-          </section>
-          <section id="offset">
-            <h3>Offset Ink</h3>
-            <img src="img/product/offset.jpg" alt="Offset Image" />
-            <p>
-              Tinta offset adalah jenis tinta khusus yang digunakan bersama
-              dengan mesin cetak offset, seperti yang digunakan untuk
-              menghasilkan cetakan letterpress atau litografi. Tinta semacam itu
-              harus diformulasikan secara khusus untuk menahan bahan kimia lain
-              yang akan bersentuhan dengan mesin cetak.
-            </p>
+          <section id="skill">
+            <h3>My Skill</h3>
+            <img class="imgicon" src="img/skill.png" alt="skill" />
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React.js</li>
+              <li>Node.js</li>
+              <li>Web Server</li>
+              <li>SQL</li>
+              <li>Hardware Maintenance</li>
+            </ul>
           </section>
         </article>
       </div>
       <aside>
         <article class="alamat">
-          <header>
-            <h2>PT. Toyo Ink Indonesia</h2>
-            <p>
-              Greenland International Industrial Center (GIIC) Blok AB No. 03,
-              Desa Nagasari Kecamatan Serang Baru, Nagasari, Bekasi, Jawa Barat
-              17330
-            </p>
+          <div>
+            <h2>Ali Purnama alam</h2>
+            <p>Web Developer</p>
             <figure>
-              <img src="img/giic.png" alt="GIIC Logo" />
-              <figcaption>GIIC</figcaption>
+              <img src="img/profil.jpeg" alt="Ali Purnama" />
+              <figcaption>Profil Picture</figcaption>
             </figure>
-          </header>
+          </div>
 
           <section>
-            <h3>Informasi Lainnya</h3>
-
             <table>
               <tr>
-                <th>Negara</th>
-                <td>Indonesia</td>
+                <th>Tanggal Lahir</th>
+                <td>1 Januari 2003</td>
               </tr>
               <tr>
-                <th>Bidang</th>
-                <td>Chemical Manufaktur</td>
+                <th>Hobby</th>
+                <td>Membaca</td>
               </tr>
               <tr>
                 <th>Telepon</th>
-                <td>+(021) 29568040</td>
+                <td>0855113001130</td>
               </tr>
             </table>
           </section>
@@ -164,7 +166,7 @@
     </main>
 
     <footer>
-      <p>Copyright &#169; 2023, Ali Purnama Alam</p>
+      <p>Copyright &#169; 2024, Ali Purnama Alam</p>
     </footer>
   </body>
 </html>
